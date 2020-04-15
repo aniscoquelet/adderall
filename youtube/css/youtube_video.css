@@ -1,0 +1,17 @@
+#secondary{
+    display:none;
+}
+
+#related{
+    display:none;
+}
+
+.html5-main-video {
+    width:100% !important;
+    height:auto !important;
+}
+
+.ytp-chrome-bottom{
+    width:100% !important;
+    left:0px !important;
+}

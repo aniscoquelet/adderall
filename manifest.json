@@ -1,5 +1,17 @@
 {
+    "name": "Adderall",
+    "description":"Virtual pill for all your focusing needs.",
+    "version": "0.1",
     "manifest_version": 2,
-    "name": "My Cool Extension",
-    "version": "0.1"
-  }
+    "content_scripts": [
+      {
+        "matches": ["*://*.youtube.com/watch*"],
+        "css": ["youtube/css/youtube_video.css"]
+      },
+      {
+        "matches": ["*://*.youtube.com/"],
+        "js": ["youtube/js/youtubeHomepage.js"],
+        "css": ["youtube/css/youtube_homepage.css"]
+      }
+    ]
+}
