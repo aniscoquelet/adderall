@@ -5,13 +5,11 @@
     "manifest_version": 2,
     "content_scripts": [
       {
-        "matches": ["*://*.youtube.com/watch*"],
-        "css": ["youtube/css/youtube_video.css"]
-      },
-      {
-        "matches": ["*://*.youtube.com/"],
-        "js": ["youtube/js/youtubeHomepage.js"],
-        "css": ["youtube/css/youtube_homepage.css"]
+        "matches": ["*://*.youtube.com/*"],
+        "css": ["youtube/css/youtube.css"],
+        "js": ["youtube/js/youtubeHomepage.js"]
       }
-    ]
+    ],
+  "icons": { "16": "icons/16.png",
+    "128": "icons/128.png" }
 }
