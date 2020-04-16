@@ -1,29 +1,41 @@
-/* RIGHT COLUMN */
+/* REMOVING RIGHT COLUMN */
 #secondary{
-    display:none;
+    visibility: hidden;
 }
 
-/* RECOMMENDED VIDEOS */
+
+/* REMOVING RECOMMENDED VIEOS (SHRINKED WINDOW)*/
 #related{
     display:none;
 }
 
-/* RESIZE VIDEO (removing recommended videos makes it not responsive) */
-.html5-main-video {
-    width:100% !important;
-    height:auto !important;
-}
 
-/* RESIZING BOTTOM COMMANDS*/
-.ytp-chrome-bottom{
-    width:100% !important;
-    left:0px !important;
-}
-.ytp-chapter-hover-container{
-    width:100% !important;
+
+/* REMOVING END SUGGESTIONS */
+
+.html5-endscreen{
+    display:none;
 }
 
 /* REMOVING DISTRACTING CONTENTS (comments, homepage, trending...) */
 #contents{
+    display:none !important;
+}
+
+ytd-mini-guide-renderer{
+    display:none !important;
+}
+
+#guide-icon{
+    display:none !important;
+    pointer-events: none;
+    cursor:unset !important;
+}
+
+#guide-icon:hover{
+    cursor:unset !important;
+}
+
+#guide-wrapper{
     display:none !important;
 }
